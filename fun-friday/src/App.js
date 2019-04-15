@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import './App.css';
+import './login/login'
+import Login from './login/login';
+import Register from './register'
 
 class App extends Component {
   render() {
+    const isLogin = localStorage.getItem('Email_id') ? true : false;
     return (
-      <div className="App">
-        <header className="App-header">
-         Hello react
-        </header>
+      <div>
+         {isLogin && <Login/>}
+          <Register/>
       </div>
     );
   }
