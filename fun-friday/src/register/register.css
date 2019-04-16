@@ -1,6 +1,11 @@
 .register-form{
     width:38em;
     margin: 0 auto;
+    padding: 1em 3em 2em 3em;
+    margin: 0em auto;
+    background-color: #fff;
+    border-radius: 4.2px;
+    box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
 }
 .register-form input{
     width: 100%;
@@ -9,6 +14,7 @@
     background-color: #f9f9f9;
     border: 1px solid #e5e5e5;
     border-radius: 3px;
+    box-sizing: border-box
 }
 .register-form h4{
     color: #7ed321;
@@ -16,11 +22,12 @@
     margin-bottom: 0px
 }
 .submit input{
-    width: 50%;
+    width: 40%;
     border: 1px solid #e5e5e5;
     border-radius: 3px;
     background-color: #7ed321;
     color: #fff;
     border-color: #64ac15;
     font-size: 20px;
+    padding: 10px 0px;
 }

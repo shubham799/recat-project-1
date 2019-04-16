@@ -1,23 +1,22 @@
 import {createStore, applyMiddleware, compose} from 'redux';
 import reducers from '../reducer';
-import {saveState} from './localStorage';
+import {loadState,saveState} from './localStorage';
 
-const configureStore = (initialState)=>{
+const configureStore = ()=>{
 
-    // const persistedState = loadState();
+    const persistedState = loadState();
   
     // const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
     const store = createStore(
       reducers,
-      initialState
-    //   persistedState
+      persistedState
     //   composeEnhancers(applyMiddleware(thunk, unauthorizedAccessMiddleWare))
     )
   
     store.subscribe(
       ()=>{
         let state = {
-          userInfo : store.getState().register,
+          registerdUsers : store.getState().registerdUsers,
          
         }
         saveState(state)

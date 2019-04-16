@@ -1,7 +1,7 @@
 import React from 'react';
 import '../register.css'
 
-const RegisterForm =({onChange,onSubmit})=>(
+const RegisterForm =({onChange,onSubmit,isLogin})=>(
     <section class="register-form">
         <h4>Register Here !!</h4>
         <form onSubmit={onSubmit}>
@@ -23,6 +23,9 @@ const RegisterForm =({onChange,onSubmit})=>(
             <p class="submit">
                 <input type="submit" value="Register" />
             </p>
+            {!isLogin && <p class="submit">
+                <input type="submit" value="Login" />
+            </p>}
         </form>
     </section>
 )

@@ -21,8 +21,8 @@ class Register extends Component{
     onSubmit(event){
         event.preventDefault();
         const user = this.state.userInfo;
-        console.log('user-------------',user)
         this.props.submitUserInfo(user);
+        this.props.history.push('/login')
     }
 
     onChange(event){
@@ -36,7 +36,7 @@ class Register extends Component{
     render(){
         return(
             <section>
-                <RegisterForm onChange={this.onChange} onSubmit={this.onSubmit}/>
+                <RegisterForm onChange={this.onChange} onSubmit={this.onSubmit} isLogin={this.props.isLogin}/>
             </section>
         )
     }
