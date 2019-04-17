@@ -18,9 +18,6 @@ class Login extends Component{
         this.redirectToRegister = this.redirectToRegister.bind(this);
     }
 
-    componentDidMount(){
-        console.log('users1----',this.props.users.userInfo)
-    }
     onChange(event){
         event.persist();
         event.stopPropagation();
@@ -38,6 +35,7 @@ class Login extends Component{
         if(isAuthenticated){
             localStorage.setItem('Email_id',this.state.user.username); 
             this.setState({notValidUser:false})
+            this.props.history.push('/home')
         }else{
             this.setState({notValidUser:true})
         }

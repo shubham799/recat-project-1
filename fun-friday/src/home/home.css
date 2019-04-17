@@ -1,0 +1,65 @@
+.image-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+  .background-properties{
+      position:relative;
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      height: 950px;
+      background-attachment: fixed;
+  }
+  .hero-slide1{
+      background-image: url(https://i.postimg.cc/mr3W231X/burger1920x1080.jpg);
+  }
+  .hero-slide2{
+      background-image: url(https://i.postimg.cc/nzs59vXf/trawberry-milk-1920x1080.jpg);
+  }
+  .hero-slide3{
+      background-image: url(https://i.postimg.cc/1zd7SfJC/bench.jpg);
+  }
+  .hero-slide4{
+      background-image: url(https://i.postimg.cc/mr3W231X/burger1920x1080.jpg);
+  }
+  .hero-slide5{
+      background-image: url(https://i.postimg.cc/cChQszdx/child.jpg);
+  }
+  /* .badge-active{
+    opacity: 1;
+    animation: fadeIn 1s normal;
+  }
+  .badge-inactive{
+    opacity: 0;
+    animation: fadeOut 1s normal;
+  } */
+  .background-properties1{
+    height: 418px;
+    margin-top: -400px;
+    margin-left: -250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 507px;
+    z-index: 2;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 950px;
+  }
+  .above-img1{
+    background-image: url(http://yeahburger.com/img/badge-bon-appetite.png?1416345655);
+  }
+  .above-img2{
+    background-image: url(http://yeahburger.com/img/badge-food-to-love.png?1416345655);
+  }
+  .above-img3{
+    background-image: url(http://yeahburger.com/img/badge-where-its-at.png?1416345655);
+  }
+  .above-img4{
+    background-image: url(http://yeahburger.com/img/badge-realfood.png?1416345655);
+  }
+  .above-img5{
+    background-image: url(http://yeahburger.com/img/badge-keep-it-local.png?1416345655);
+  }
